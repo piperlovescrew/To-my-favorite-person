@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Favorite Person 🧡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#fff4e8,#ffd6a5,#ffbf69);
+    min-height:100vh;
+    color:#5c3d2e;
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+h1{
+    font-family:'Caveat',cursive;
+    font-size:4rem;
+    color:#ff7b00;
+}
+
+.subtitle{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+    margin-top:15px;
+}
+
+.hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.heart{
+    position:absolute;
+    color:#ff8c42;
+    animation:float 12s linear infinite;
+    opacity:.35;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-100px);
+    }
+}
+
+.collage{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:40px 20px;
+}
+
+.polaroid{
+    background:white;
+    padding:15px 15px 50px;
+    width:260px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transform:rotate(-3deg);
+}
+
+.polaroid:nth-child(2){
+    transform:rotate(4deg);
+}
+
+.polaroid:nth-child(3){
+    transform:rotate(-5deg);
+}
+
+.polaroid img{
+    width:100%;
+    border-radius:8px;
+}
+
+.videos-title{
+    text-align:center;
+    font-family:'Caveat',cursive;
+    font-size:3rem;
+    color:#ff7b00;
+    margin-top:30px;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#ff7b00;
+    margin-bottom:15px;
+}
+
+.video-placeholder{
+    height:180px;
+    border:3px dashed #ffb067;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#a35d00;
+    background:#fff8f2;
+    padding:20px;
+}
+
+.note{
+    margin-top:12px;
+    font-family:'Caveat',cursive;
+    font-size:1.4rem;
+}
+
+.footer{
+    max-width:800px;
+    margin:70px auto;
+    text-align:center;
+    background:#fff7ef;
+    padding:40px;
+    border-radius:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.footer h2{
+    font-family:'Caveat',cursive;
+    color:#ff7b00;
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.verse{
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.reference{
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.small-note{
+    margin-top:20px;
+    font-family:'Caveat',cursive;
+    font-size:1.8rem;
+    color:#ff8c42;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+    <div class="heart" style="left:10%;font-size:24px;">🧡</div>
+    <div class="heart" style="left:25%;font-size:18px;animation-delay:2s;">🍊</div>
+    <div class="heart" style="left:50%;font-size:20px;animation-delay:5s;">🧡</div>
+    <div class="heart" style="left:70%;font-size:25px;animation-delay:1s;">✨</div>
+    <div class="heart" style="left:85%;font-size:18px;animation-delay:4s;">🧡</div>
+</div>
+
+<header>
+
+<h1>To My Favorite Person 🧡</h1>
+
+<p class="subtitle">
+For the days you miss me, the nights you can't sleep,
+and every moment in between.<br><br>
+
+Press play whenever you need me. 🧡
+</p>
+
+</header>
+
+<section class="collage">
+
+<div class="polaroid">
+<img src="photo1.jpg" alt="">
+</div>
+
+<div class="polaroid">
+<img src="photo2.jpg" alt="">
+</div>
+
+<div class="polaroid">
+<img src="photo3.jpg" alt="">
+</div>
+
+</section>
+
+<h2 class="videos-title">Videos For You 🧡</h2>
+
+<div class="video-grid">
+
+<div class="card"><h3>I Love You More</h3><div class="video-placeholder">Video goes here 🎥</div><div class="note">Press play whenever you need me 🧡</div></div>
+
+<div class="card"><h3>Missing Me?</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>Can't Sleep</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>Stressed</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>Worried About Me</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>1 More Day!</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>The Day I Leave</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>Good Morning Handsome</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>Bad Day</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>When You Need a Smile</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>Worn Out</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+<div class="card"><h3>Just Because</h3><div class="video-placeholder">Video goes here 🎥</div></div>
+
+</div>
+
+<div class="footer">
+
+<h2>With all my love 🧡</h2>
+
+<p class="verse">
+“Love bears all things, believes all things,
+hopes all things, endures all things.”
+</p>
+
+<p class="reference">
+1 Corinthians 13:7
+</p>
+
+<div class="small-note">
+I love you more. Always. 🍊🧡
+</div>
+
+</div>
+
+</body>
+</html>
+
